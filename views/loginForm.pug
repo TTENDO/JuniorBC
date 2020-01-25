@@ -1,0 +1,127 @@
+doctype html
+html
+     head
+          title JBC
+
+
+          //-the dashboard style links
+          link(rel="stylesheet" href="assets/css/normalize.css")
+          link(rel="stylesheet" href="assets/css/themify-icons.css")
+          link(rel="stylesheet" href="assets/css/flag-icon.min.css")
+          link(rel="stylesheet" href="assets/css/cs-skin-elastic.css")
+          link(rel="stylesheet" href="assets/scss/style.css")
+          link(href="assets/css/lib/vector-map/jqvmap.min.css" rel="stylesheet")
+
+          link( rel="stylesheet" href="css/bootstrap.min.css")
+          link(rel="stylesheet" href="css/style.css")  
+
+          //-other css 
+
+          link(rel="stylesheet" href="css/DashboardStyle.css")
+
+               //-My  CSS
+          link( rel="stylesheet" href="css/myDashboardCss.css")
+          link( rel="stylesheet" href="css/loginFormCss.css")
+          //-the font awesome icons
+          link(href="icons/css/all.css" rel="stylesheet")
+          
+           //-header icon
+          link(rel="icon" type="image/png" href="images/logo.png")
+     body.container-fluid.loginBody(style='height:100%;width:100%;background:url("images/lotion.jpg");background-position:center;background-repeat:no-repeat;background-size:cover;opacity:2;height:100vh;color:white')
+          .row
+               .col-sm-3
+               .col-sm-6
+                    form.form-group.loginForm(name='loginForm' action='/dashboard')
+                         .row
+                         
+                         center
+                                                       
+                              h1(style='color:#ff79c0') LOGIN to JBC
+                         .row
+                         .col-md-12
+                              label(for='email') Email:
+                              input#email.form-control(type='text' name='email' placeholder='Please enter your email' required)
+                              label(for='password') Password:
+                              input#password.form-control(type='password' name='password' placeholder='Enter password' required)
+                              p#log
+                         br
+                         .footer
+                         center
+                              // calling the check function on clicking the login button
+                              button.btn.btn-dark.login(type='submit') Login
+                              // Resetting the form on clicking the reset button
+                              button#recet.btn.btn-primary.reset(type='reset' ) Reset
+
+
+                    style.
+                                       
+                         
+                         /*making the login form background darker*/
+                         .loginForm {
+                         background: linear-gradient(
+                         rgba(29, 29, 32, 0.5),
+                         rgba(69, 69, 71, 0.5),
+                         rgba(69, 69, 71, 0.5)
+                         );
+                         /* background-color: #ff79c0; */
+                         background-position: center;
+                         background-repeat: no-repeat;
+                         background-size: cover;
+                         opacity: 2;
+                         }
+               .col-sm-3
+
+
+
+
+         
+
+
+     //-jquery
+     script(src="js/vendor/jquery-1.12.4.min.js")
+     //-bootstrap JS
+     script(src="js/bootstrap.min.js")
+     //-wow JS
+     script( src="js/wow.min.js")
+     //-price-slider JS
+     script(src="js/jquery-price-slider.js")
+     //-meanmenu JS
+     script(src="js/jquery.meanmenu.js")
+     //-owl.carousel JS
+     script(src="js/owl.carousel.min.js")
+     //-sticky JS
+     script(src="js/jquery.sticky.js")
+     //-scrollUp JS
+     script(js/jquery.scrollUp.min.js)
+     //-counterUp JS
+     script(src="js/counterup/jquery.counterup.min.js")
+     script(src="js/counterup/waypoints.min.js")
+     script(src="js/counterup/counterup-active.js")
+     //- mCustomScrollbar JS
+
+     script(src="js/scrollbar/jquery.mCustomScrollbar.concat.min.js") 
+     script(src="js/scrollbar/mCustomScrollbar-active.js")
+     //- metisMenu JS
+
+     script(src="js/metisMenu/metisMenu.min.js")
+     script(src="js/metisMenu/metisMenu-active.js")
+     //- morrisjs JS
+     script(src="js/morrisjs/raphael-min.js")
+     script(src="js/morrisjs/morris.js")
+     script(src="js/morrisjs/home3-active.js")
+     //- morrisjs JS
+
+     script(src="js/sparkline/jquery.sparkline.min.js")
+     script(src="js/sparkline/jquery.charts-sparkline.js")
+     script(src="js/sparkline/sparkline-active.js")
+     //- calendar JS
+     script(src="js/calendar/moment.min.js")
+     script(src="js/calendar/fullcalendar.min.js")
+     script(src="js/calendar/fullcalendar-active.js")
+     //- plugins JS
+
+     script(src="js/plugins.js") 
+     //- main JS
+     script(src="js/main.js") 
+     //-tawk chat JS
+     script(src="js/tawk-chat.js")

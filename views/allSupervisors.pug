@@ -1,0 +1,256 @@
+doctype html
+html
+     head
+          title JBC
+          //-Google Fonts
+          link(href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet")
+          //-bootstrap css
+          link( rel="stylesheet" href="css/bootstrap.min.css")
+          //-- owl.carousel CSS
+
+          //- link(rel="stylesheet" href="css/owl.carousel.css")
+          //- link(rel="stylesheet" href="css/owl.theme.css")
+          //- link(rel="stylesheet" href="css/owl.transitions.css")
+          //- //- animate CSS responsible for animating things like the notifications in the header
+
+
+          //-the font awesome icons
+          link(href="icons/css/all.css" rel="stylesheet")
+          //- meanmenu icon CSS respponsible for the menu in the vertical navigation
+
+          link(rel="stylesheet" href="css/meanmenu.min.css")
+
+          link(rel="stylesheet" href="css/scrollbar/jquery.mCustomScrollbar.min.css")
+          //- metisMenu CSS for the space on the vertical nav bar
+
+          link(rel="stylesheet" href="css/metisMenu/metisMenu.min.css")
+          link(rel="stylesheet" href="css/metisMenu/metisMenu-vertical.css")
+          //-the dashboard style links
+          link(rel="stylesheet" href="assets/css/normalize.css")
+          link(rel="stylesheet" href="assets/css/themify-icons.css")
+          link(rel="stylesheet" href="assets/css/flag-icon.min.css")
+          link(rel="stylesheet" href="assets/css/cs-skin-elastic.css")
+          link(rel="stylesheet" href="assets/scss/style.css")
+          link(href="assets/css/lib/vector-map/jqvmap.min.css" rel="stylesheet")
+          link(rel="stylesheet" href="css/animate.css")
+          link(rel="stylesheet" href="css/style.css")
+          //-My  CSS
+          link( rel="stylesheet" href="css/myDashboardCss.css")
+          //-other css    
+          link(rel="stylesheet" href="css/DashboardStyle.css")
+
+           //-header icon
+          link(rel="icon" type="image/png" href="images/logo.png")
+
+     body.container-fluid(style='height:100%;width:100%;background:url("images/lotion.jpg");background-position:center;background-repeat:no-repeat;background-size:cover;opacity:2;height:100vh;color:white')
+
+          .row.firstRow
+               .col-sm-2(style="background-color:white")
+                    img.img-responsive(src="images/hugelogo.png" style="width:200px;height:60px" alt="Image")
+
+               .col-sm-10.withinFirstRow
+                    .row
+                         .col-sm-10 
+                              .row
+                                   .col-sm-4.theHeading
+                                        h1 Junior
+                                   .col-sm-4.theHeading
+                                        h1 Baby 
+                                        //- i Stepping in when you need to step out!!!!!!!
+                                   .col-sm-4.theHeading
+                                        h1 Center
+                              .row
+                                   .col-sm-3
+                                   .col-sm-6
+                                        i Stepping in when you need to step out!!!!!
+                                   .col-sm-3
+
+                         .col-sm-2  
+                              .dropdown.float-left
+                                   a.dropdown-toggle(href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                                        img.user-avatar.rounded-circle.dropdown(src="images/user.jpg" alt="User Avatar")
+
+                                   .user-menu.dropdown-content
+                                        a.nav-link(href="#")
+                                             i.fas.fa-user My Profile
+                                        a.nav-link(href="#")
+                                             i.fas.fa-cog Settings
+                                        a.nav-link(href="login")
+                                             i.fas.fa-power-off Logout
+
+          .row
+               .col-sm-2.withinSecondRow
+                    nav
+                         ul
+                              li
+                                   a(href="dashboard")
+                                        span.fas.fa-home
+                                        span.mini-click-non Home
+
+                              //-supervisor tab
+                              li.dropdown
+                                   a
+                                        span.fas.fa-user-graduate
+                                        span Supervisors
+                                   ul.submenu-angle(aria-expanded="false").dropdown-content
+                                        li
+                                             a(title="All Supervisors" href="allSupervisors")
+                                                  span.mini-sub-pro All Supervisors
+                                        li
+                                             a(title="Add Supervisor" href="registerUsers")
+                                                  span.mini-sub-pro Add Supervisors
+                                        li
+                                             a(title="Edit Supervisor" href="editSupervisor")
+                                                  span.mini-sub-pro Edit Supervisors  
+                                        li
+                                             a(title="Supervisor Profile" href="supervisorProfile")
+                                                  span.mini-sub-pro Supervisor Profile 
+                              //-Baby sitter tab
+                              li.dropdown
+                                   a.has-arrow( aria-expanded="false")
+                                        span.fas.fa-users
+                                        span.mini-click-non Babysitter
+                                   ul.submenu-angle(aria-expanded="false").dropdown-content
+                                        li
+                                             a(title="All Babysitters" href="allBabysitters")
+                                                  span.mini-sub-pro All Babysitters
+                                        li
+                                             a(title="Add Babysitters" href="addBabysitters")
+                                                  span.mini-sub-pro Add Babysitters
+                                        li
+                                             a(title="Edit Babysitters" href="editBabysitters")
+                                                  span.mini-sub-pro Edit Babysitters
+                                        li
+                                             a(title="Babysitter Profile" href="babysitterProfile")
+                                                  span.mini-sub-pro Babysitter Profile
+                              //-Appointment
+                              li.dropdown
+                                   a.has-arrow(href="appointments" aria-expanded="false")
+                                        span.fas.fa-clipboard-list
+                                        span.mini-click-non Appointments
+                                   ul.submenu-angle(aria-expanded="false").dropdown-content
+                                        li
+                                             a(title="Add Appointments" href="addAppointments")
+                                                  span.mini-sub-pro Add Appointment
+                                        li
+                                             a(title="View Appointments" href="viewAppointments")
+                                                  span.mini-sub-pro View Appointments
+                                        li
+                                             a(title="Edit Appointments" href="editAppointments")
+                                                  span.mini-sub-pro Edit Appointments 
+                              //-Register users
+                              li
+                                   a(title="Register Users" href="registerUsers").active
+                                        span.fas.fa-user-edit
+                                        span.mini-sub-pro Register Users
+
+               .col-sm-10.withinSecondRow2
+                    //-The main section
+                    .container-fluid.mainSection
+                    .row
+                         .col-sm-12
+                              .well-block
+                                   .well-title(style="margin:50px 10px 50px 10px")
+                                        center
+                                             h2 Supervisors
+                                        //-form start
+                                        form(method="POST" action="/addBabysitters")
+                                             .row
+                                                  .col-sm-6
+                                                       //-name
+                                                       .form-group
+                                                            .row
+                                                                 //-first name
+                                                                 .col-sm-6
+                                                                      label.control-label(for="sitterFname") First name:
+                                                                      input#sitterFname.form-control.input-md(name="sitterFname" type="text" placeholder="Enter First Name" autofocus required )
+                                                                 //-last name
+                                                                 .col-sm-6
+                                                                      label.control-label(for="sitterLname") Last name:
+                                                                      input#sitterLname.form-control.input-md(name="sitterLname" type="text" placeholder="Enter Last Name" required)
+
+                                                                 //-Phone number
+                                                  .col-sm-6
+                                                       .form-group
+                                                            label.control-label(for="sitterPhone") Phone Number:
+                                                            input#sitterPhone.form-control.input-md(name="sitterPhone" type="text" placeholder="Enter phone number" required)
+                                                  //-Address
+                                                  .col-sm-6
+                                                       .form-group
+                                                            label.control-label(for="address") Address:
+                                                            input#address.form-control.input-md(name="address" type="text" style="color:black" placeholder="Enter sitter's address" required)
+
+                                                  //-email
+                                                  .col-sm-6
+                                                       .form-group
+                                                            label.control-label(for="sitterEmail") Email:
+                                                            input#sitterEmail.form-control.input-md(name="sitterEmail" type="text" placeholder="Enter sitter's email" required)
+
+
+                                                  .col-sm-12
+                                                       .form-group
+                                                            button#addSitter.btn.btn-primary(name="addSitter" type="submit" style="margin-top:30px;background-color:#006DF0;border:1px solid #006DF0;margin-right:50px ") Add Sitter
+                                                            button#cancelAddSitter.btn.btn-primary(name="cancelAddSitter" type="reset" style="margin-top:30px;background-color:#006DF0;border:1px solid #006DF0") Cancel 
+
+
+
+
+
+                    footer
+                         .row
+                              .col-sm-3
+                              .col-sm-6
+                                   p.footerP  Copyright &copy;All rights reserved to JBC 2019.
+                              .col-sm-3          
+
+
+
+
+          //-jquery
+     script(src="js/vendor/jquery-1.12.4.min.js")
+     //-bootstrap JS
+     script(src="js/bootstrap.min.js")
+     //-wow JS
+     script( src="js/wow.min.js")
+     //-price-slider JS
+     script(src="js/jquery-price-slider.js")
+     //-meanmenu JS
+     script(src="js/jquery.meanmenu.js")
+     //-owl.carousel JS
+     script(src="js/owl.carousel.min.js")
+     //-sticky JS
+     script(src="js/jquery.sticky.js")
+     //-scrollUp JS
+     script(js/jquery.scrollUp.min.js)
+     //-counterUp JS
+     script(src="js/counterup/jquery.counterup.min.js")
+     script(src="js/counterup/waypoints.min.js")
+     script(src="js/counterup/counterup-active.js")
+     //- mCustomScrollbar JS
+
+     script(src="js/scrollbar/jquery.mCustomScrollbar.concat.min.js") 
+     script(src="js/scrollbar/mCustomScrollbar-active.js")
+     //- metisMenu JS
+
+     script(src="js/metisMenu/metisMenu.min.js")
+     script(src="js/metisMenu/metisMenu-active.js")
+     //- morrisjs JS
+     script(src="js/morrisjs/raphael-min.js")
+     script(src="js/morrisjs/morris.js")
+     script(src="js/morrisjs/home3-active.js")
+     //- morrisjs JS
+
+     script(src="js/sparkline/jquery.sparkline.min.js")
+     script(src="js/sparkline/jquery.charts-sparkline.js")
+     script(src="js/sparkline/sparkline-active.js")
+     //- calendar JS
+     script(src="js/calendar/moment.min.js")
+     script(src="js/calendar/fullcalendar.min.js")
+     script(src="js/calendar/fullcalendar-active.js")
+     //- plugins JS
+
+     script(src="js/plugins.js") 
+     //- main JS
+     script(src="js/main.js") 
+     //-tawk chat JS
+     script(src="js/tawk-chat.js")

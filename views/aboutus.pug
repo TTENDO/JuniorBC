@@ -1,0 +1,185 @@
+extends layout.pug
+
+block styles
+     meta(charset="utf-8")
+     meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+     link(href="https://fonts.googleapis.com/css?family=DM+Sans:300,400,700|Indie+Flower" rel="stylesheet")    
+     link(rel="stylesheet" href="fonts/icomoon/style.css")
+     link(rel="stylesheet" href="css/bootstrap.min.css")
+     link(rel="stylesheet" href="css/bootstrap-datepicker.css")
+     link(rel="stylesheet" href="css/jquery.fancybox.min.css")
+     link(rel="stylesheet" href="css/owl.carousel.min.css")
+     link(rel="stylesheet" href="css/owl.theme.default.min.css")
+     link(rel="stylesheet" href="fonts/flaticon/font/flaticon.css")
+     link(rel="stylesheet" href="css/aos.css")
+
+     //- MAIN CSS
+     link(rel="stylesheet" href="css/style.css")
+     link(rel="stylesheet" href="css/myCss.css")
+
+block content
+
+     .ftco-blocks-cover-1
+          .site-section-cover.overlay(data-stellar-background-ratio="0.5" style="background-image: url('images/hero_1.jpg')")
+               .container
+                    .row.align-items-center
+                         .col-md-5.mt-5.pt-5.font-weight-bold.text-black(style="font-size:30px") 
+                              span 
+                              h1.mb-2.font-weight-bold(style="color:#FF79C0;")  About JUNIOR BABY CENTER
+                              p
+                                   a.text-white.madePink(href="index") Home
+                                   span.mx-3 /
+                                   strong About
+                         .col-md-6.ml-auto.align-self-end
+
+
+     .site-section.bg-teal
+          .container
+               .row.justify-content-center.text-center.mb-5.section-2-title
+                    .col-md-6
+                         span.text-cursive.h5.text-white Meet the special JBC Team
+               .row.align-items-stretch
+                    .col-lg-4.col-md-6.mb-5
+                         .post-entry-1.h-100.person-1.teal
+                              img.img-fluid(src="images/person_2.jpg" alt="Image") 
+                              .post-entry-1-contents
+                                   strong                       
+                                        span.meta Founder
+                                        h2 Trizo Muwonge
+                                                          
+                    .col-lg-4.col-md-6.mb-5
+                         .post-entry-1.h-100.person-1.yellow
+                              img.img-fluid(src="images/person_1.jpg" alt="Image") 
+                              .post-entry-1-contents
+                                   strong                       
+                                        span.meta Co Founder
+                                        h2 Raymond Muwonge
+                    
+                    .col-lg-4.col-md-6.mb-5
+                         .post-entry-1.h-100.person-1.red
+                              img.img-fluid(src="images/person_1.jpg" alt="Image") 
+                              .post-entry-1-contents
+                                   strong                       
+                                        span.meta Chairman Board of Governors
+                                        h2 Mugabi Daniel
+
+                    .col-lg-4.col-md-6.mb-5
+                         .post-entry-1.h-100.person-1.green
+                              img.img-fluid(src="images/person_4.jpg" alt="Image") 
+                              .post-entry-1-contents
+                                   strong                       
+                                        span.meta Supervisor/Member of the Board
+                                        h2 Magezi David
+                    
+                    .col-lg-4.col-md-6.mb-5
+                         .post-entry-1.h-100.person-1.blue
+                              img.img-fluid(src="images/person_5.jpg" alt="Image") 
+                              .post-entry-1-contents
+                                   strong                       
+                                        span.meta Supervisor/Member of the Board
+                                        h2 Sarah Mpagi
+                    
+                    .col-lg-4.col-md-6.mb-5
+                         .post-entry-1.h-100.person-1.red
+                              img.img-fluid(src="images/person_5.jpg" alt="Image") 
+                              .post-entry-1-contents
+                                   strong                       
+                                        span.meta Supervisor/Member of the Board
+                                        h2 Namaganda Rebbecca
+
+                    .col-lg-4.col-md-6.mb-5
+                         .post-entry-1.h-100.person-1.red
+                              img.img-fluid(src="images/person_5.jpg" alt="Image") 
+                              .post-entry-1-contents
+                                   strong                       
+                                        span.meta Baby Sitter
+                                        h2 Chebet Rebbecca
+
+                    .col-lg-4.col-md-6.mb-5
+                         .post-entry-1.h-100.person-1.red
+                              img.img-fluid(src="images/person_5.jpg" alt="Image") 
+                              .post-entry-1-contents
+                                   strong                       
+                                        span.meta Baby Sitter
+                                        h2 Nyanyic Fanny
+
+                    .col-lg-4.col-md-6.mb-5
+                         .post-entry-1.h-100.person-1.red
+                              img.img-fluid(src="images/person_5.jpg" alt="Image") 
+                              .post-entry-1-contents
+                                   strong                       
+                                        span.meta Baby Sitter
+                                        h2 Ssonko Doreen
+                                        
+         
+     .site-section.bg-info
+          .container
+               .row.mb-5
+                    .col-12.text-center
+                         span.text-cursive.h5.text-red.d-block.font-weight-bold.madePink Packages You Like
+                         h2.text-white Our Packages
+               .row
+                    .col-lg-4.mb-4.mb-lg-0
+                         .package.text-center.bg-white
+                              span.img-wrap
+                                   img.img-fluid(src="images/flaticon/svg/001-jigsaw.svg" alt="Image")
+                              h3.text-teal Morning Package
+                              p This runs from 7:00 AM to 11:00AM
+                              p    
+                                   a.btn.btn-primary.btn-custom-1.mt-4(href="aboutus") Learn More
+                    .col-lg-4.mb-4.mb-lg-0
+                         .package.text-center.bg-white
+                              span.img-wrap
+                                   img.img-fluid(src="images/flaticon/svg/002-target.svg" alt="Image")
+                              h3.text-success Afternoon Package
+                              p This runs from 12:00PM to 4:00PM
+                              p    
+                                   a.btn.btn-warning.btn-custom-1.mt-4(href="aboutus") Learn More
+
+                    .col-lg-4.mb-4.mb-lg-0
+                         .package.text-center.bg-white
+                              span.img-wrap
+                                   img.img-fluid(src="images/flaticon/svg/003-mission.svg" alt="Image")
+                              h3.text-danger Night Package
+                              p This runs from 5:00PM to 9:00PM
+                              p    
+                                   a.btn.btn-success.btn-custom-1.mt-4(href="aboutus") Learn More
+
+     footer.site-footer
+          .container
+               .row
+                    .col-lg-4
+                         h2.footer-heading.mb-3 About Us
+                              b
+                              p.mb-5(style="font-size:20px") Junior Baby Center (JBC)
+                              i You're dedicated partners that step in when you need to step out
+                              h2.footer-heading.mb-4     Send us feedback 
+                              form.d-flex.subcribe(action="#")
+                                   input.form-control.mr-3(type="text" palceholder="Enter feedback")
+                                   input.btn.btn-primary(type="submit" value="Send")
+                    .col-lg-8.ml-auto
+                         .row
+                              .col-lg-4.ml-auto
+                                   h2.footer-heading.mb-4 Navigation
+                                   ul.list-unstyled
+                                        li
+                                             a(href="aboutus") About Us
+                                        li
+                                             a(href="gallery") Gallery
+                                        li
+                                             a(href="pricing") Pricing
+                                        li
+                                             a(href="contact") Contact Us
+
+          .row.pt-5.mt-5.text-center
+               .col-md-12
+                    .border-top.pt-5
+                         p Copyright &copy;All rights reserved to JBC 2019.
+
+
+
+
+
+
+
+

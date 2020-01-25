@@ -1,0 +1,139 @@
+extends layout.pug
+
+block styles
+     meta(charset="utf-8")
+     meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+     link(href="https://fonts.googleapis.com/css?family=DM+Sans:300,400,700|Indie+Flower" rel="stylesheet")    
+     link(rel="stylesheet" href="fonts/icomoon/style.css")
+     link(rel="stylesheet" href="css/bootstrap.min.css")
+     link(rel="stylesheet" href="css/bootstrap-datepicker.css")
+     link(rel="stylesheet" href="css/jquery.fancybox.min.css")
+     link(rel="stylesheet" href="css/owl.carousel.min.css")
+     link(rel="stylesheet" href="css/owl.theme.default.min.css")
+     link(rel="stylesheet" href="fonts/flaticon/font/flaticon.css")
+     link(rel="stylesheet" href="css/aos.css")
+
+     //- MAIN CSS
+     link(rel="stylesheet" href="css/style.css")
+     link(rel="stylesheet" href="css/myCss.css")
+
+block content
+
+     .ftco-blocks-cover-1
+          .site-section-cover.overlay(data-stellar-background-ratio="0.5" style="background-image: url('images/hero_1.jpg')")
+               .container
+                    .row.align-items-center
+                         .col-md-5.mt-5.pt-5.font-weight-bold.text-black(style="font-size:30px") 
+                              span 
+                              //- b Packages at  JUNIOR BABY CENTER
+                              h1.mb-2.font-weight-bold(style="color:#FF79C0;") Our Pricing at JBC
+                              p
+                                   a.text-white.madePink(href="index") Home
+                                   span.mx-3 /
+                                   strong  Pricing
+
+                         .col-md-6.ml-auto.align-self-end
+
+
+
+
+          .site-section
+               .container
+                    .row
+                         .col-md-4
+                              span.text-cursive.h5.text-red.d-block.font-weight-bold Pricing Plan
+                              h2.text-black Our Pricing
+                              p Basing on our kind of services, our prices are quite pocket-friendly
+                         .col-md-4
+                              .pricing.teal
+                                   span.price
+                                        span 8500/=
+                                   h3 The morning and afternoon clubs
+                                   ul.ul-check.list-unstyled.teal
+                                        li Morning is from 7:00AM to 11:00AM
+                                        li Afternoon is from 12:00PM to 4:00PM
+                                   p 
+                                        a.btn.btn-teal.btn-custom-1.mt-4(href="contact") Call now to book
+                         .col-md-4
+                              .pricing.danger.circle
+                                   span.price
+                                        span 12000/=
+                                   h3 The night club
+                                   ul.ul-check.list-unstyled.danger
+                                        li The night club runs from 5:00PM to 9:00PM
+                                        li So if its a night step out, we are here
+                                   p
+                                        a.btn.btn-danger.btn-custom-1.mt-4(href="contact") Call now to book
+
+          .site-section.bg-light
+               .container
+                    .row.mb-5
+                         .col-12.text-center
+                              span.text-cursive.h5.text-red.d-block  Testimonial
+                                   h2.text-black What Our Clients Say About Us
+
+                    .row.justify-content-center
+                         .col-md-8
+                              .testimonial-3-wrap
+                                   .owl-carousel.nonloop-block-13.owl-loaded.owl-drag
+                                        .testimonial-3.d-flex.owl-stage-outer
+                                             .vcard-wrap.mr-5
+                                                  img.vcard.img-fluid(src='images/louis.jpg' alt='Image')
+                                             .text
+                                                  h3 Mukisa Louis
+                                                  p.position Parent
+                                                  p   Because pf JBC, I can still take my wife out for a date thanks to the night club!!!!!
+                                        .testimonial-3.d-flex
+                                             .vcard-wrap.mr-5
+                                                  img.vcard.img-fluid(src='images/sarah.jpg' alt='Image')
+                                             .text
+                                                  h3 Sarah Mpagi
+                                                  p.position Parent 
+                                                  p   Me and my girls can now hang without worrying about the safety of our kids because JBC steps in at pocket friendly prices
+                                        .testimonial-3.d-flex
+                                             .vcard-wrap.mr-5
+                                                  img.vcard.img-fluid(src='images/david.jpg' alt='Image')
+                                             .text
+                                                  h3 David Magezi
+                                                  p.position Proud father of two
+                                                  p   My wife and I used to skip functions because kids were a thing and we didn&apos;t trust who to leave our kids with but then JBC  came in  and yeah we attend functions!!
+
+
+     footer.site-footer
+          .container
+               .row
+                    .col-lg-4
+                         h2.footer-heading.mb-3 About Us
+                              b
+                              p.mb-5(style="font-size:20px") Junior Baby Center (JBC)
+                              i You're dedicated partners that step in when you need to step out
+                              h2.footer-heading.mb-4     Send us feedback 
+                              form.d-flex.subcribe(action="#")
+                                   input.form-control.mr-3(type="text" placeholder="Enter feedback")
+                                   input.btn.btn-primary(type="submit" value="Send")
+                    .col-lg-8.ml-auto
+                         .row
+                              .col-lg-4.ml-auto
+                                   h2.footer-heading.mb-4 Navigation
+                                   ul.list-unstyled
+                                        li
+                                             a(href="aboutus") About Us
+                                        li
+                                             a(href="gallery") Gallery
+                                        li
+                                             a(href="pricing") Pricing
+                                        li
+                                             a(href="contact") Contact Us
+
+          .row.pt-5.mt-5.text-center
+               .col-md-12
+                    .border-top.pt-5
+                         p Copyright &copy;All rights reserved to JBC 2019.
+
+
+
+
+
+
+
+

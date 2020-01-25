@@ -1,0 +1,180 @@
+extends layout.pug
+
+block styles
+          meta(charset="utf-8")
+          meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+          link(href="https://fonts.googleapis.com/css?family=DM+Sans:300,400,700|Indie+Flower" rel="stylesheet")    
+          link(rel="stylesheet" href="fonts/icomoon/style.css")
+          link(rel="stylesheet" href="css/bootstrap.min.css")
+          link(rel="stylesheet" href="css/bootstrap-datepicker.css")
+          link(rel="stylesheet" href="css/jquery.fancybox.min.css")
+          link(rel="stylesheet" href="css/owl.carousel.min.css")
+          link(rel="stylesheet" href="css/owl.theme.default.min.css")
+          link(rel="stylesheet" href="fonts/flaticon/font/flaticon.css")
+          link(rel="stylesheet" href="css/aos.css")
+
+          //- MAIN CSS
+          link(rel="stylesheet" href="css/style.css")
+          link(rel="stylesheet" href="css/myCss.css")
+
+block content
+
+          .ftco-blocks-cover-1
+               .site-section-cover.overlay
+                    .container
+                         .row.align-items-center
+                              .col-md-5.mt-5.pt-5.font-weight-bold.text-black(style="font-size:30px") 
+                                   span 
+                                   h1.mb-3.font-weight-bold(style="color:#000000;")  WELCOME TO JUNIOR BABY CENTER
+                                   h1.mb-1.text-teal(style="font-size:15px") We who step in when you need to step out!!!!
+                                   p.mt-5
+                                        a.btn.btn-primary.py-4.btn-custom-1.makePink Learn More
+                              .col-md-6.ml-auto.align-self-end
+                                   img.img-fluid(src="images/kid_transparent.png" alt="Image")
+
+          .site-section
+               .container
+                    .row
+                         .col-lg-4
+                              .block-2.cards.makePink
+                                   span.wrap-icon.makePink
+                                        span.icon-home
+                                   h2 Available sessions aka Clubs
+                                   p 
+                                   br
+                                   |    We have morning, afternoon and evening sessions which we call clubs
+
+                         .col-lg-4
+                              .block-2.yellow.cards
+                                   span.wrap-icon
+                                        span.icon-person
+                                   h2 How to get your child under our care
+                                   p All you have to do is call in and make an appointment
+
+                         .col-lg-4
+                              .block-2.teal.cards
+                                   span.wrap-icon
+                                        span.icon-cog
+                                   h2 How is our billing?
+                                   p Each child is paying 8500/= per two hours for the mornig and afternoon club 
+                                   | Each child is paying 12000/= per two hours for the night club
+
+          .site-section.bg-light
+               .container
+                    .row
+                         .col-md-6.mb-5.mb-md-0
+                              img.img-fluid(src="images/supa3.jpg" alt="Image")
+                         .col-md-5.ml-auto.pl-md-5
+                              span.text-cursive.h5.text-red.font-weight-bold About Us
+                              h3.text-black How do we step in when you want to step out
+                              p    
+                                   span We are that solution that you are looking for when it comes to taking care of your kids
+                              p.mt-5
+                                   a.btn.btn-warning.py-4.btn-custom-1(href="aboutus") More About Us
+
+          .site-section.bg-info
+               .container
+                    .row.mb-5
+                         .col-12.text-center
+                              span.text-cursive.h5.text-red.d-block.font-weight-bold.madePink Packages You Like
+                              h2.text-white Our Packages
+                    .row
+                         .col-lg-4.mb-4.mb-lg-0
+                              .package.text-center.bg-white
+                                   span.img-wrap
+                                        img.img-fluid(src="images/flaticon/svg/001-jigsaw.svg" alt="Image")
+                                   h3.text-teal Morning Package
+                                   p This runs from 7:00 AM to 11:00AM
+                                   p    
+                                        a.btn.btn-primary.btn-custom-1.mt-4(href="aboutus") Learn More
+                         .col-lg-4.mb-4.mb-lg-0
+                              .package.text-center.bg-white
+                                   span.img-wrap
+                                        img.img-fluid(src="images/flaticon/svg/002-target.svg" alt="Image")
+                                   h3.text-success Afternoon Package
+                                   p This runs from 12:00PM to 4:00PM
+                                   p    
+                                        a.btn.btn-warning.btn-custom-1.mt-4(href="aboutus") Learn More
+
+                         .col-lg-4.mb-4.mb-lg-0
+                              .package.text-center.bg-white
+                                   span.img-wrap
+                                        img.img-fluid(src="images/flaticon/svg/003-mission.svg" alt="Image")
+                                   h3.text-danger Night Package
+                                   p This runs from 5:00PM to 9:00PM
+                                   p    
+                                        a.btn.btn-success.btn-custom-1.mt-4(href="aboutus") Learn More
+
+          .site-section
+               .container
+                    .row
+                         .col-md-4
+                              span.text-cursive.h5.text-red.d-block.font-weight-bold Pricing Plan
+                              h2.text-black Our Pricing
+                              p Basing on our kind of services, our prices are quite pocket-friendly
+                         .col-md-4
+                              .pricing.teal
+                                   span.price
+                                        span 8500/=
+                                   h3 The morning and afternoon clubs
+                                   ul.ul-check.list-unstyled.teal
+                                        li Morning is from 7:00AM to 11:00AM
+                                        li Afternoon is from 12:00PM to 4:00PM
+                                   p 
+                                        a.btn.btn-teal.btn-custom-1.mt-4(href="contact") Call now to book
+                         .col-md-4
+                              .pricing.danger.circle
+                                   span.price
+                                        span 12000/=
+                                   h3 The night club
+                                   ul.ul-check.list-unstyled.danger
+                                        li The night club runs from 5:00PM to 9:00PM
+                                        li So if its a night step out, we are here
+                                   p
+                                        a.btn.btn-danger.btn-custom-1.mt-4(href="contact") Call now to book
+
+          .site-section.py-5.bg-warning
+               .container
+                    .row.justify-content-center
+                         .col-md-12.d-flex
+                              h2.text-white.m-0 Make an Apppointment with us today
+                              a.btn.btn-primary.btn-custom-1.py-3.px-5.ml-auto(href="contact") Get Started    
+
+          footer.site-footer
+               .container
+                    .row
+                         .col-lg-4
+                              h2.footer-heading.mb-3 About Us
+                                   b
+                                   p.mb-5(style="font-size:20px") Junior Baby Center (JBC)
+                                   i You're dedicated partners that step in when you need to step out
+                                   h2.footer-heading.mb-4     Send us feedback 
+                                   form.d-flex.subcribe(action="#")
+                                        input.form-control.mr-3(type="text" placeholder="Enter feedback")
+                                        input.btn.btn-primary(type="submit" value="Send")
+                         .col-lg-8.ml-auto
+                              .row
+                                   .col-lg-4.ml-auto
+                                        h2.footer-heading.mb-4 Navigation
+                                        ul.list-unstyled
+                                             li
+                                                  a(href="aboutus") About Us
+                                             li
+                                                  a(href="gallery") Gallery
+                                             li
+                                                  a(href="pricing") Pricing
+                                             li
+                                                  a(href="contact") Contact Us
+
+               .row.pt-5.mt-5.text-center
+                    .col-md-12
+                         .border-top.pt-5
+                              p Copyright &copy;All rights reserved to JBC 2019.
+
+
+
+
+
+
+
+
